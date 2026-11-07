@@ -1,0 +1,16 @@
+ONLINE APK BUILD (GitHub Actions)
+
+This project includes .github/workflows/build-apk.yml.
+
+1. Extract this ZIP on your phone or computer.
+2. Create a GitHub account and a NEW repository (Public or Private).
+3. Upload the CONTENTS of the VikkuDailySchedules folder to the repository root. Make sure .github/workflows/build-apk.yml is included. On mobile GitHub web upload, hidden .github folders may be difficult to upload; use GitHub's web editor to create the workflow file if necessary.
+4. Open the repository's Actions tab and enable Actions if prompted.
+5. Select "Build Vikku Daily Schedules APK" and tap "Run workflow" (or push/commit to main).
+6. Wait for the workflow to finish successfully.
+7. Open the completed run and download the "Vikku-Daily-Schedules-APK" artifact. Extract the downloaded artifact ZIP to get app-debug.apk.
+8. Transfer app-debug.apk to your Android phone and install it. Android may ask you to allow installs from that browser/file manager.
+
+The cloud build needs internet to download Android/Gradle dependencies. The installed app is designed to run offline and does not request the INTERNET permission.
+
+This workflow creates a DEBUG APK for personal testing. For public distribution, create a properly signed release APK with a private keystore and keep its passwords private.
